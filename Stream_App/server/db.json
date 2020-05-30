@@ -1,0 +1,31 @@
+{
+  "streams": [
+    {
+      "title": "Stream 1",
+      "description": "This is good stream",
+      "id": 1
+    },
+    {
+      "title": "Stream 2",
+      "description": "Nice Sports Stream",
+      "id": 2
+    },
+    {
+      "title": "New Stream",
+      "description": "This Create By Me",
+      "userId": null,
+      "id": 3
+    },
+    {
+      "title": "Sports Live",
+      "description": "All Kind Of Sports Live Here",
+      "userId": "109835277561836243141",
+      "id": 5
+    },
+    {
+      "title": "Test Stream",
+      "description": "watch ",
+      "id": 7
+    }
+  ]
+}

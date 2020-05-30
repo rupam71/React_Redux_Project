@@ -1,0 +1,42 @@
+// Array Based approch
+
+const streamReducer = (state = [], action) => {
+    switch(action.type) {
+        case 'EDIT_STREAM' : 
+            return state.map(stream=>{
+                if(stream.id === action.payload.id){
+                    return action.payload;
+                }
+                else {
+                    return stream;
+                }
+            })
+        case default : return state;
+    }
+}
+
+
+// Object Based approch
+
+const streamReducer = (state = {}, action) => {
+    switch(action.type) {
+        case 'EDIT_STREAM' : 
+            const newState = {...state};
+            newState[action.payload.id] = action.payload;
+            return newState;
+        case default : return state;
+    }
+}
+
+
+
+// Object Based approch
+//Using ES6
+
+const streamReducer = (state = {}, action) => {
+    switch(action.type) {
+        case 'EDIT_STREAM' : 
+            return {...state, [action.payload.id] : action.payload };
+        case default : return state;
+    }
+}

@@ -1,0 +1,15 @@
+mkdir backend
+cd backend
+.. code
+
+
+npm i json-server {/* Fake Rest Service */}
+
+....................................
+....................................
+
+backend/packege.json => REPLACE THIS
+
+"scripts": {
+    "start": "json-server -p 3001 -w db.json"
+  },
